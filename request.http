@@ -1,0 +1,25 @@
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+    "title": "Doing Programming",
+    "description":"it is a Python Programming"
+}
+
+###
+GET http://localhost:3000/tasks
+
+###
+GET  http://localhost:3000/tasks/1
+
+###
+PUT http://localhost:3000/tasks/1
+Content-Type: application/json
+
+{
+    "title":"Running along River",
+    "description":"it is with my friend"
+}
+
+###
+DELETE http://localhost:3000/tasks/1
